@@ -13,7 +13,7 @@ This is a Unzip plugin of phonegap -2.7.0 .Created by Vishal Rajpal Modified by 
 <b>Java File :</b>Copy   Com Folder inside your Src folder :
 
 <b>JavaScript Function :</b>
-
+<code>
 function extractFile(fileurl)
 {
 	 alert("file url is    . "+fileurl); 
@@ -33,13 +33,14 @@ function fails(error)
 { 
     alert(error+"is error");
 }
+</code>
 
 <b>Plugin.xml :</b>
 
 Write This line in Plugin.xml 
-
+<code>
 <plugin name="ZipPlugin" value="com.phonegap.plugin.ExtractZipFile.ExtractZipFilePlugin" />
-
+</code>
 
 
 
