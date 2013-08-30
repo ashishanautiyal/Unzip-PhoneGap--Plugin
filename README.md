@@ -37,9 +37,9 @@ function fails(error) <br />
 <b>Plugin.xml :</b>
 <br /><br />
 Write This line in Plugin.xml <br /><br />
-<code><br /><br />
+
 <plugin name="ZipPlugin" value="com.phonegap.plugin.ExtractZipFile.ExtractZipFilePlugin" />
-</code>
+
 
 <br /><br /><br /><br />
 
