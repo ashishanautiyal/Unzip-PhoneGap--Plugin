@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a Unzip plugin of phonegap -2.7.0 .Created by Vishal Rajpal Modified by Ashisha Nautiyal
 
 <b>How to use It:<b>
@@ -42,3 +43,9 @@ http://javacourseblog.blogspot.com
 
 
 #                                Copyright © 2013 Ashisha Nautiyal
+=======
+Unzip-PhoneGap--Plugin
+======================
+
+phonegap Plugin for unzippimg
+>>>>>>> 44ce342d7f82389994754d851c06398c66ba4276
