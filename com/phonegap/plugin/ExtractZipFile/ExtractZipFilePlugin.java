@@ -30,14 +30,13 @@ import android.util.Log;
 public class ExtractZipFilePlugin extends CordovaPlugin
 {
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException
+    public boolean execute(String action, final JSONArray args, final CallbackContext callbackContext) throws JSONException
     {
         if (action.equals("unzip"))
         {
-
+            final String filename = args.getString(0); 
             cordova.getThreadPool().execute(new Runnable() {
                 public void run() {
-                    String filename = args.getString(0); 
                     unzip(filename, callbackContext);
                 }
             });
