@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.phonegap.plugin.ExtractZipFile"
+        version="0.0.1">
+    <name>ExtractZipFile</name>
+    <description>Cordova Unzip Plugin (android only)</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, zip, unzip</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ExtractZipFilePlugin">
+                <param name="android-package" value="com.phonegap.plugin.ExtractZipFile.ExtractZipFilePlugin"/>
+            </feature>
+        </config-file>
+
+        <js-module src="js/ExtractZipFile.js" name="ExtractZipFile">
+            <clobbers target="extractZipFile" />
+        </js-module>
+
+        <source-file src="com/phonegap/plugin/ExtractZipFile/ExtractZipFilePlugin.java" target-dir="src/com/phonegap/plugin/ExtractZipFile" />
+
+    </platform>
+</plugin>
