@@ -1,58 +1,51 @@
-Unzip-PhoneGap--Plugin
-======================
+# Unzip-PhoneGap--Plugin
 
-phonegap Plugin for unzippimg
-
+## Installation
 
 
-<<<<<<< HEAD
-This is a Unzip plugin of phonegap -2.7.0 .Created by Vishal Rajpal Modified by Ashisha Nautiyal
+1) Make sure that you have [Node](http://nodejs.org/) and [Cordova CLI](https://github.com/apache/cordova-cli) or [PhoneGap's CLI](https://github.com/mwbrooks/phonegap-cli) or [Cordova Plugman](https://github.com/apache/cordova-plugman/) installed on your machine.
 
-<b>How to use It:<b>
+2) Add a plugin to your project using [Cordova CLI](https://github.com/apache/cordova-cli):
 
-<b>Java File :</b>Copy   Com Folder inside your Src folder :
+```bash
+cordova plugin add <this-repo-url>
+```
 
-<b>JavaScript Function :</b>
-<code>
-function extractFile(fileurl)
+Or using [PhoneGap CLI](https://github.com/mwbrooks/phonegap-cli):
+
+```bash
+phonegap local plugin add <this-repo-url>
+```
+3) Register plugin within `config.xml` of your app
+
+```xml
+<feature name="ExtractZipFile">
+    <param name="android-package" value="com.phonegap.plugin.ExtractZipFile.ExtractZipFilePlugin"/>
+</feature>
+```
+
+4) The `clobber` definition of the plugin is called `extractZipFile`. So you can reference to the plugin from anywhere in your code.
+
+Example:
+
+```js
+function extractOK(status)
 {
-    console.log("file url is    . "+fileurl);<br />
-    var ZipClient = new ExtractZipFilePlugin();<br />
-    ZipClient.extractFile(fileurl,win,fails);<br />
-     return ;<br />
-     }<br />
-function win(status) <br />
-{ <br />
-   alert('Success in unzip'+status);<br />
-   return;<br />
-} <br />
-  <br />
-function fails(error) <br />
+    console.log("extractOK");
+}
+
+function extractError(error)
 { 
-    alert(error+"is error");<br />
-}<br />
-<br />
-</code>
-<br /><br /><br />
-<b>Plugin.xml :</b>
-<br /><br />
-Write This line in Plugin.xml <br /><br />
-<code>
-\<plugin name="ZipPlugin" value="com.phonegap.plugin.ExtractZipFile.ExtractZipFilePlugin" />
-</code>
-
-<br /><br /><br /><br />
-
-<B>Visit my blog 
-
-http://javacourseblog.blogspot.com <b>
+    console.log("extractError "+error);
+}
 
 
+function extractFile(zipfile)
+{
+    console.log("Extracting "+ zipfile);
+    extractZipFile.unzip(zipfile, extractOK, extractError);
+}
+```
 
-#                                Copyright © 2013 Ashisha Nautiyal
-=======
-Unzip-PhoneGap--Plugin
-======================
 
-phonegap Plugin for unzippimg
 

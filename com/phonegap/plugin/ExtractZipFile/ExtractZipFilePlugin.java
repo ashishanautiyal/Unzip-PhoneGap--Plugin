@@ -21,9 +21,9 @@ import java.util.zip.ZipFile;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import org.apache.cordova.api.CallbackContext;
-import org.apache.cordova.api.CordovaPlugin;
-import org.apache.cordova.api.PluginResult;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PluginResult;
 
 import android.util.Log;
 
@@ -34,8 +34,14 @@ public class ExtractZipFilePlugin extends CordovaPlugin
     {
         if (action.equals("unzip"))
         {
-            String filename = args.getString(0); 
-            unzip(filename, callbackContext);
+
+            cordova.getThreadPool().execute(new Runnable() {
+                public void run() {
+                    String filename = args.getString(0); 
+                    unzip(filename, callbackContext);
+                }
+            });
+
             return true;
         }
 
