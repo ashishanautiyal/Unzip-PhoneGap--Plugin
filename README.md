@@ -14,7 +14,7 @@ cordova plugin add <this-repo-url>
 Or using [PhoneGap CLI](https://github.com/mwbrooks/phonegap-cli):
 
 ```bash
-phonegap local plugin add <this-repo-url>
+phonegap local plugin add https://github.com/ashishanautiyal/Unzip-PhoneGap--Plugin.git
 ```
 3) Register plugin within `config.xml` of your app
 
@@ -47,6 +47,8 @@ function extractFile(zipfile)
 }
 ```
 Visit My blog . http://javacourseblog.blogspot.com for my other article
+
+[Visit My blog](http://javacourseblog.blogspot.com)
 
 The Copyright license is here 
 
