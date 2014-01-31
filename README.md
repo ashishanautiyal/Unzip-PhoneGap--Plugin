@@ -48,6 +48,10 @@ function extractFile(zipfile)
 ```
 Visit My blog . http://javacourseblog.blogspot.com for my other article
 
-The Copyright license is here https://github.com/ashishanautiyal/Unzip-PhoneGap--Plugin/blob/master/license.txt
- Copyright (c) 2013 Ashish Nautiyal
+The Copyright license is here 
+
+https://github.com/ashishanautiyal/Unzip-PhoneGap--Plugin/blob/master/license.txt
+
+Copyright (c) 2013 Ashish Nautiyal 
+
 
