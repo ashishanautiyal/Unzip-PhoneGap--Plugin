@@ -48,9 +48,9 @@ function extractFile(zipfile)
 ```
 Visit My blog . http://javacourseblog.blogspot.com for my other article
 
-[Visit My blog](http://javacourseblog.blogspot.com)
+[Visit My blog for my other article](http://javacourseblog.blogspot.com)
 
-The Copyright license is here 
+[The Copyright license is here](https://github.com/ashishanautiyal/Unzip-PhoneGap--Plugin/blob/master/license.txt) 
 
 https://github.com/ashishanautiyal/Unzip-PhoneGap--Plugin/blob/master/license.txt
 
