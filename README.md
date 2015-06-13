@@ -1,5 +1,7 @@
 # Unzip-PhoneGap--Plugin
 
+[![Join the chat at https://gitter.im/ashishanautiyal/Unzip-PhoneGap--Plugin](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ashishanautiyal/Unzip-PhoneGap--Plugin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 For Usage and Detail Read :
 
 [PhoneGap / Cordova Unzip Plugin for android ](http://javacourseblog.blogspot.in/2014/05/phonegap-cordova-unzip-plugin-for.html)
